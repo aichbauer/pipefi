@@ -15,7 +15,10 @@ const callback = (msg, channel) => {
     const AMQP_URL = `amqp://${config.connection.user}:${config.connection.password}@${config.connection.host}:${config.connection.port}`;
     const connection = await amqp.connect(AMQP_URL);
     const channel = await connection.createChannel();
+
     await channel.assertQueue(queue);
+    await channel.assertExchange(queue, 'direct');
+    await channel.bindQueue(queue, queue, '');
     await channel.consume(queue, (msg) => callback(msg, channel));
   } catch (e) {
     console.error(e);
