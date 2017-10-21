@@ -1,7 +1,7 @@
 {
   "name": "pipefi",
   "version": "1.0.0",
-  "description": "A library for a simple rabbitmq filters",
+  "description": "A library for simple RabbitMQ filters",
   "main": "./lib/index.js",
   "scripts": {
     "pretest": "npm run lint",
