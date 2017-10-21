@@ -4,7 +4,6 @@
 
 > A library for a simple rabbitmq filters
 
-
 ## Installation
 
 ```sh
@@ -12,6 +11,8 @@ $ npm i pipefi
 ```
 
 ## Usage
+
+> *Note:* Only works with `Node v8+`
 
 > Take a look at the [example](./example)
 
