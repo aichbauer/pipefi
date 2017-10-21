@@ -10,6 +10,8 @@ $ npm i pipefi
 
 ## Usage
 
+> Take a look at the [example](./example)
+
 ```js
 const pipefi = require('pipefi');
 
