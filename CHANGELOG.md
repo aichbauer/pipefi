@@ -1,3 +1,7 @@
+1.0.1 - October, 21 2017
+
+ * fe4469f Docs: change description (aichbauer)
+
 1.0.0 - October, 21 2017
 
  * 4f2614a Docs: only works node v8+ (aichbauer)
