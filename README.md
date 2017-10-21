@@ -1,6 +1,9 @@
 # pipefi
 
+[![Build Status](https://travis-ci.org/aichbauer/pipefi.svg?branch=master)](https://travis-ci.org/aichbauer/pipefi)
+
 > A library for a simple rabbitmq filters
+
 
 ## Installation
 
