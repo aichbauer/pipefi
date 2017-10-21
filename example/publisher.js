@@ -13,6 +13,10 @@ const config = require('./config');
 
     await channel.assertQueue(queue);
     await channel.sendToQueue(queue, new Buffer(message));
+
+    setTimeout(() => {
+      connection.close();
+    }, 500);
   } catch (e) {
     console.error(e);
   }
