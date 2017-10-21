@@ -1,0 +1,37 @@
+{
+  "name": "pipefi",
+  "version": "0.0.0",
+  "description": "A library for a simple rabbitmq filters",
+  "main": "./lib/index.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "lint": "eslint lib",
+    "prepush": "npm run lint"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aichbauer/pipefi.git"
+  },
+  "author": "Aichbauer Lukas <l.aichbauer@gmail.com>",
+  "contributers": [
+    "Stoecklmair Jan Peer <janpeer264@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aichbauer/pipefi/issues"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/aichbauer/pipefi#readme",
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "husky": "^0.13.2"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.1"
+  }
+}
