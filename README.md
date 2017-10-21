@@ -11,9 +11,60 @@ $ npm i pipefi
 ## Usage
 
 ```js
-const pipefi = require('pipefi'); // import myPackage from 'pipefi';
+const pipefi = require('pipefi');
 
-pipefi();
+const config = require('path/to/config');
+
+pipefi(config);
+```
+
+## Config
+
+* [connection](#connection)
+* [pipes](#pipes)
+
+### connection
+
+**Type:** `object`
+
+The connection object consists of 4 properties:
+* user (`string`)
+* password (`string`)
+* host (`string`)
+* port (`number`)
+
+Example:
+```js
+{
+  connection: {
+    user: 'guest',
+    password: 'guest',
+    host: 'localhost',
+    port: 5672,
+  },
+}
+```
+
+### pipes
+
+**Type:** `array`
+
+Pipes consists of an array of objects. One object consists of 3 different properties:
+* from (`string`)
+* to (`string`)
+* filter (`function`)
+
+Example:
+```js
+{
+  pipes: [
+    {
+      from: 'filterOne',
+      to: 'filterTwo',
+      filter: (msg) => msg, // do something with the message
+    },
+  ],
+}
 ```
 
 ## LICENSE
