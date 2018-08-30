@@ -12,7 +12,7 @@ const config = require('./config');
     const channel = await connection.createChannel();
 
     await channel.assertQueue(queue);
-    await channel.sendToQueue(queue, new Buffer(message));
+    await channel.sendToQueue(queue, Buffer.from(message));
 
     setTimeout(() => {
       connection.close();
